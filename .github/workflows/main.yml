@@ -24,7 +24,7 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/sr_bot:latest
 
-  copy_configs:
+  copy_files_to_host:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
@@ -38,13 +38,13 @@ jobs:
           username: ${{ secrets.USER  }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          source: "docker-compose.yaml"
+          source: "*,!.git,!.github,!.venv,!.env"
           target: "~/sr_bot"
           overwrite: true
 
   deploy:
     runs-on: ubuntu-latest
-    needs: copy_configs
+    needs: copy_files_to_host
     steps:
       - name: executing remote ssh commands to deploy
         uses: appleboy/ssh-action@master
