@@ -5,15 +5,12 @@ name = "pypi"
 
 [packages]
 aiogram = "*"
-torch = "*"
-torchvision = "*"
 pandas = "*"
-tqdm = "*"
 tensorlayerx = {git = "https://github.com/tensorlayer/tensorlayerx.git"}
-tensorflow-macos = "*"
 easydict = "*"
 opencv-python = "*"
 numpy = "*"
+tensorflow-macos = "*"
 
 [dev-packages]
 
