@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   bot:
-    build: .
+    image: hlystovea/sr_bot:latest
     container_name: sr_bot
     restart: always
     command: python3 bot.py
