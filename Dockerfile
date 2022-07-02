@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow
+FROM python:3.10
 LABEL maintainer="hlystovea@gmail.com"
 WORKDIR /sr_bot
 RUN apt update
