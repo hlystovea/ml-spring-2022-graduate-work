@@ -22,7 +22,7 @@ easydict==1.9
 flatbuffers==1.12
 frozenlist==1.3.0; python_version >= '3.7'
 gast==0.4.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'
-git+https://github.com/tensorlayer/tensorlayerx.git@c08d3fe2e776a5d31b5492c49df90b5e0cfbe2cc#egg=tensorlayerx
+tensorlayerx @ git://github.com/tensorlayer/tensorlayerx.git
 google-auth-oauthlib==0.4.6; python_version >= '3.6'
 google-auth==2.9.0; python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'
 google-pasta==0.2.0
