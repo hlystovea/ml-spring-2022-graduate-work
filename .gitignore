@@ -130,3 +130,6 @@ dmypy.json
 
 # third-party module
 srgan/
+
+# mac os files
+.DS_Store
