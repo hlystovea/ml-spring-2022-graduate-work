@@ -133,3 +133,6 @@ srgan/
 
 # mac os files
 .DS_Store
+
+# local wheels
+*.whl
