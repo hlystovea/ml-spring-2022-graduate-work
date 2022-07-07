@@ -11,4 +11,6 @@ RUN mkdir ./srgan/models && \
 RUN apt install -y ffmpeg libsm6 libxext6
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
+RUN wget "https://drive.google.com/file/d/12nQ9F9hFddU_z8l2Qzkbjkv9E7-VoIVA/view?usp=sharing"
+RUN pip3 install --ignore-installed --upgrade tensorflow-2.7.0-cp38-cp38-linux_x86_64.whl
 COPY . .
