@@ -2,7 +2,7 @@ FROM ubuntu
 LABEL maintainer="hlystovea@gmail.com"
 WORKDIR /sr_bot
 RUN apt update
-RUN apt install python3.10
+RUN apt install -y python3.10
 RUN apt install -y git
 RUN git clone https://github.com/tensorlayer/srgan.git
 RUN apt install -y wget
